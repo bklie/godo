@@ -1,6 +1,15 @@
 [package]
 name = "godo"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+description = "Git-Oriented DO - CLI-first local TODO management tool"
+license = "MIT"
 
 [dependencies]
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
+dirs = "6"
+thiserror = "2"
+regex = "1"
